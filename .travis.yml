@@ -12,4 +12,8 @@ before_install:
 
 before_script:
   - . .travis.sh before_script
-  - export MAVEN_OPTS="-Xmx128m"
+
+env:
+  global:
+    - secure: "AZ/IcnhVXQBk4W9mdPQcNrCgsN6m4GDf2NKqWOL+uWpETFCTK5lB5vcpsUtNumhblub2AOIECDP+pRUZx8FMQw8bczvN0+5/O3z/HFJui6nit2mkTz8QCMlI5VepTnroa+1oGi4t+a7cXKM3Ep9LV9eFoCWAYJqop7UnZdabll4="
+    - secure: "hUV+b4X1CPR4jEh5U5GWIHX7nNCvfKiq9UtyOF8oEfQjIOE8z9mUuXXLZveiziZUuDPQtCHXm8m5RCcmcY1P4W7wmyW2gIAV63mrxtwKsCCFl4qeGWU+xL/Bv6cjfUK1pfaawo8Pl6cFv4wuaYiC1NSo+vjgIzyR8W2NTwXB+tM="
