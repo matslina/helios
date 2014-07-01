@@ -35,7 +35,7 @@ case "$1" in
 
       # proxy docker connections to our remote docker server 
       export SOCAT_DEFAULT_LISTEN_IP=$HOST_IP
-      socat -d TCP-LISTEN:2375,fork OPENSSL:$REMOTE,cert=/tmp/client-cert.pem,cafile=/tmp/ca.pem,key=/tmp/client-key.pem &
+      socat -d -d -v TCP-LISTEN:2375,fork OPENSSL:$REMOTE,cert=/tmp/client-cert.pem,cafile=/tmp/ca.pem,key=/tmp/client-key.pem &
 
       # also proxy the rest of the ports
       for port in $DOCKER_PORT_RANGE
