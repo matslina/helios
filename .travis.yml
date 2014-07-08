@@ -15,4 +15,4 @@ before_script:
   - export MAVEN_OPTS="-Xmx128m"
 
 script:
-  - mvn -B -Dtest=com.spotify.helios.system.CliDeploymentTest -pl helios-system-tests test
+  - . .travis.sh script

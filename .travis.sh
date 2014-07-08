@@ -25,4 +25,14 @@ case "$1" in
 
     while ! docker info; do sleep 1; done
     ;;
+
+  script)
+    for i in {1..100}
+    do
+      mvn -B -Dtest=com.spotify.helios.system.CliDeploymentTest -pl helios-system-tests test
+
+      kill $!
+      . .travis.sh before_script
+    done
+    ;;
 esac
