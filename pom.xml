@@ -159,9 +159,9 @@
               <systemPropertyVariables>
                 <junit.parallel.threads>1</junit.parallel.threads>
                 <logToFile>false</logToFile>
-                <heliosLoggingLevel>WARN</heliosLoggingLevel>
+                <heliosLoggingLevel>DEBUG</heliosLoggingLevel>
                 <externalLoggingLevel>OFF</externalLoggingLevel>
-                <rootLoggingLevel>WARN</rootLoggingLevel>
+                <rootLoggingLevel>DEBUG</rootLoggingLevel>
               </systemPropertyVariables>
             </configuration>
           </plugin>
